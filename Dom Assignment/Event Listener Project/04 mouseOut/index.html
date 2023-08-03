@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 20px;
+            background-color:yellowgreen;
+            color: black;
+            font-weight: 600;
+        }
+
+/* 
+        button:hover{
+            font-size: large;
+            background-color: aqua;
+        } */
+    </style>
+</head>
+<body>
+    <h1>
+        Hello my name is Md Saif Ali.
+    </h1>
+    <p>Move mouse out from the button to know my school name</p>
+    <button id="age">My Age is </button>
+    <p id="demo"></p>
+
+
+    <script>
+        const elem=document.getElementById("age");
+        elem.addEventListener('mouseout',cell);
+
+        function cell(){
+            document.getElementById("demo").innerText="DE NOBILI SCHOOL MUGMA (D.N.S)";
+        }
+    </script>
+</body>
+</html>

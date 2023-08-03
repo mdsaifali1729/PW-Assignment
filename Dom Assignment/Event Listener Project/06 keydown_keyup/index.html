@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onkeydown Event</h2>
+
+<p>Press and hold down a key inside the text field to set a red background color. Release the key to set a green background color.</p>
+<input type="text" id="demo" onkeydown="onkeydownfunction()" onkeyup="onkeyupfunction()">
+
+
+<script>
+    function onkeydownfunction(){
+        document.getElementById("demo").style.backgroundColor='red';
+    }
+
+     function onkeyupfunction(){
+        document.getElementById("demo").style.backgroundColor='green';
+     }
+
+
+</script>
+</body>
+</html>
